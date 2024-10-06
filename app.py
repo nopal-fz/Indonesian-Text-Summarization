@@ -12,7 +12,7 @@ config.early_stopping = True
 
 model = EncoderDecoderModel.from_pretrained(model_ckpt, config=config)
 
-def extract_text_from_pdf(pdf_file):
+def extract_text_pdf(pdf_file):
     pdf_reader = PyPDF2.PdfReader(pdf_file)
     text = ''
     for page in pdf_reader.pages:
